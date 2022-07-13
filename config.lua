@@ -5,45 +5,59 @@ Config.EnableExtraMenu = false
 Config.MenuItems = {
     [1] = {
         id = 'citizen',
-        title = 'Personnage',
+        title = 'Citizen',
         icon = 'user',
         items = {
             {
                 id = 'givenum',
-                title = 'Montrer ses coordonnées',
+                title = 'Give Contact Details',
                 icon = 'address-book',
                 type = 'client',
                 event = 'qb-phone:client:GiveContactDetails',
                 shouldClose = true
             }, {
                 id = 'getintrunk',
-                title = 'Entrer dans le coffre',
+                title = 'Get In Trunk',
                 icon = 'car',
                 type = 'client',
                 event = 'qb-trunk:client:GetIn',
                 shouldClose = true
             }, {
+                id = 'togglehotdogsell',
+                title = 'Hotdog Selling',
+                icon = 'hotdog',
+                type = 'client',
+                event = 'qb-hotdogjob:client:ToggleSell',
+                shouldClose = true
+            }, {
                 id = 'interactions',
-                title = 'Intéraction',
-                icon = 'exclamation-triangle',
+                title = 'Interaction',
+                icon = 'triangle-exclamation',
                 items = {
                     {
+                        id = 'handcuff',
+                        title = 'Cuff',
+                        icon = 'user-lock',
+                        type = 'client',
+                        event = 'police:client:CuffPlayerSoft',
+                        shouldClose = true
+                    }, {
                         id = 'playerinvehicle',
-                        title = 'Mettre dans le véhicule',
+                        title = 'Put In Vehicle',
                         icon = 'car-side',
                         type = 'client',
                         event = 'police:client:PutPlayerInVehicle',
                         shouldClose = true
                     }, {
                         id = 'playeroutvehicle',
-                        title = 'Sortir du véhicule',
+                        title = 'Take Out Of Vehicle',
                         icon = 'car-side',
                         type = 'client',
                         event = 'police:client:SetPlayerOutVehicle',
                         shouldClose = true
                     }, {
                         id = 'stealplayer',
-                        title = 'Dérober',
+                        title = 'Rob',
                         icon = 'mask',
                         type = 'client',
                         event = 'police:client:RobPlayer',
@@ -55,66 +69,64 @@ Config.MenuItems = {
     },
     [2] = {
         id = 'general',
-        title = 'Général',
-        icon = 'list-alt',
+        title = 'General',
+        icon = 'rectangle-list',
         items = {
             {
                 id = 'house',
-                title = 'Maison',
-                icon = 'home',
+                title = 'House Interaction',
+                icon = 'house',
                 items = {
                     {
                         id = 'givehousekey',
-                        title = 'Donner les clefs',
+                        title = 'Give House Keys',
                         icon = 'key',
                         type = 'client',
                         event = 'qb-houses:client:giveHouseKey',
-                        shouldClose = true,
-                        items = {}
+                        shouldClose = true
                     }, {
                         id = 'removehousekey',
-                        title = 'Retirer les clefs',
+                        title = 'Remove House Keys',
                         icon = 'key',
                         type = 'client',
                         event = 'qb-houses:client:removeHouseKey',
-                        shouldClose = true,
-                        items = {}
+                        shouldClose = true
                     }, {
                         id = 'togglelock',
-                        title = 'Ouvrir/fermer la porte',
+                        title = 'Toggle Doorlock',
                         icon = 'door-closed',
                         type = 'client',
                         event = 'qb-houses:client:toggleDoorlock',
                         shouldClose = true
                     }, {
                         id = 'decoratehouse',
-                        title = 'Décorer la maison',
-                        icon = 'boxes',
+                        title = 'Decorate House',
+                        icon = 'box',
                         type = 'client',
                         event = 'qb-houses:client:decorate',
                         shouldClose = true
                     }, {
                         id = 'houseLocations',
-                        title = 'Lieux d\'interaction',
-                        icon = 'home',
+                        title = 'Interaction Locations',
+                        icon = 'house',
                         items = {
                             {
                                 id = 'setstash',
-                                title = 'Définir la réserve',
+                                title = 'Set Stash',
                                 icon = 'box-open',
                                 type = 'client',
                                 event = 'qb-houses:client:setLocation',
                                 shouldClose = true
                             }, {
                                 id = 'setoutift',
-                                title = 'Définir le garde-robe',
-                                icon = 'tshirt',
+                                title = 'Set Wardrobe',
+                                icon = 'shirt',
                                 type = 'client',
                                 event = 'qb-houses:client:setLocation',
                                 shouldClose = true
                             }, {
                                 id = 'setlogout',
-                                title = 'Définir le Logout',
+                                title = 'Set Logout',
                                 icon = 'door-open',
                                 type = 'client',
                                 event = 'qb-houses:client:setLocation',
@@ -125,55 +137,54 @@ Config.MenuItems = {
                 }
             }, {
                 id = 'clothesmenu',
-                title = 'Habis',
-                icon = 'tshirt',
+                title = 'Clothing',
+                icon = 'shirt',
                 items = {
-                    --{
-                    --    id = 'Hair',
-                    --    title = 'Hair',
-                    --    icon = 'user',
-                    --    type = 'client',
-                    --    event = 'qb-radialmenu:ToggleClothing',
-                    --    shouldClose = true
-                    --}, 
                     {
+                        id = 'Hair',
+                        title = 'Hair',
+                        icon = 'user',
+                        type = 'client',
+                        event = 'qb-radialmenu:ToggleClothing',
+                        shouldClose = false
+                    }, {
                         id = 'Ear',
-                        title = 'Boucle d\'oreille',
-                        icon = 'deaf',
+                        title = 'Ear Piece',
+                        icon = 'ear-deaf',
                         type = 'client',
                         event = 'qb-radialmenu:ToggleProps',
                         shouldClose = false
                     }, {
                         id = 'Neck',
-                        title = 'Cou',
+                        title = 'Neck',
                         icon = 'user-tie',
                         type = 'client',
                         event = 'qb-radialmenu:ToggleClothing',
                         shouldClose = false
                     }, {
                         id = 'Top',
-                        title = 'Haut',
-                        icon = 'tshirt',
+                        title = 'Top',
+                        icon = 'shirt',
                         type = 'client',
                         event = 'qb-radialmenu:ToggleClothing',
                         shouldClose = false
                     }, {
                         id = 'Shirt',
-                        title = 'T-Shirt',
-                        icon = 'tshirt',
+                        title = 'Shirt',
+                        icon = 'shirt',
                         type = 'client',
                         event = 'qb-radialmenu:ToggleClothing',
                         shouldClose = false
                     }, {
                         id = 'Pants',
-                        title = 'Pantalon',
+                        title = 'Pants',
                         icon = 'user',
                         type = 'client',
                         event = 'qb-radialmenu:ToggleClothing',
                         shouldClose = false
                     }, {
                         id = 'Shoes',
-                        title = 'Chaussures',
+                        title = 'Shoes',
                         icon = 'shoe-prints',
                         type = 'client',
                         event = 'qb-radialmenu:ToggleClothing',
@@ -185,42 +196,42 @@ Config.MenuItems = {
                         items = {
                             {
                                 id = 'Hat',
-                                title = 'Casquette',
+                                title = 'Hat',
                                 icon = 'hat-cowboy-side',
                                 type = 'client',
                                 event = 'qb-radialmenu:ToggleProps',
                                 shouldClose = false
                             }, {
                                 id = 'Glasses',
-                                title = 'Lunette',
+                                title = 'Glasses',
                                 icon = 'glasses',
                                 type = 'client',
                                 event = 'qb-radialmenu:ToggleProps',
                                 shouldClose = false
                             }, {
                                 id = 'Visor',
-                                title = 'Viseur',
+                                title = 'Visor',
                                 icon = 'hat-cowboy-side',
                                 type = 'client',
                                 event = 'qb-radialmenu:ToggleProps',
                                 shouldClose = false
                             }, {
                                 id = 'Mask',
-                                title = 'Masque',
+                                title = 'Mask',
                                 icon = 'theater-masks',
                                 type = 'client',
                                 event = 'qb-radialmenu:ToggleClothing',
                                 shouldClose = false
                             }, {
                                 id = 'Vest',
-                                title = 'Veste',
+                                title = 'Vest',
                                 icon = 'vest',
                                 type = 'client',
                                 event = 'qb-radialmenu:ToggleClothing',
                                 shouldClose = false
                             }, {
                                 id = 'Bag',
-                                title = 'Sac',
+                                title = 'Bag',
                                 icon = 'shopping-bag',
                                 type = 'client',
                                 event = 'qb-radialmenu:ToggleClothing',
@@ -234,14 +245,14 @@ Config.MenuItems = {
                                 shouldClose = false
                             }, {
                                 id = 'Watch',
-                                title = 'Montre',
+                                title = 'Watch',
                                 icon = 'stopwatch',
                                 type = 'client',
                                 event = 'qb-radialmenu:ToggleProps',
                                 shouldClose = false
                             }, {
                                 id = 'Gloves',
-                                title = 'Gants',
+                                title = 'Gloves',
                                 icon = 'mitten',
                                 type = 'client',
                                 event = 'qb-radialmenu:ToggleClothing',
@@ -250,15 +261,16 @@ Config.MenuItems = {
                         }
                     }
                 }
-            }, {
-                id = 'atm',
-                title = 'ATM',
-                icon = 'money-bill',
-                type = 'client',
-                event = 'qb-atms:client:atmCommand',
-                shouldClose = true
-            },
+            }
         }
+    },
+    [3] = {
+        id = 'atm',
+        title = 'ATM',
+        icon = 'money-bill',
+        type = 'client',
+        event = 'qb-atms:client:atmCommand',
+        shouldClose = true
     },
 }
 
@@ -732,27 +744,34 @@ Config.JobInteractions = {
 }
 
 Config.GangInteractions = {
-    ["yakuza"] = {
+    ["ballas"] = {
         {
-            id = 'cornerselling',
-            title = 'Vente de drogue',
-            icon = 'cannabis',
-            type = 'client',
-            event = 'qb-drugs:client:cornerselling',
-            shouldClose = true
-        }, {
             id = 'escort',
-            title = 'Kidnaper',
-            icon = 'user-friends',
+            title = 'Kidnap',
+            icon = 'user-group',
             type = 'client',
             event = 'police:client:KidnapPlayer',
             shouldClose = true
         }, {
+            id = 'escort2',
+            title = 'Escort',
+            icon = 'user-group',
+            type = 'client',
+            event = 'police:client:EscortPlayer',
+            shouldClose = true
+        }, {
             id = 'escort554',
-            title = 'Prendre en hotage',
+            title = 'Hostage',
             icon = 'child',
             type = 'client',
             event = 'A5:Client:TakeHostage',
+            shouldClose = true
+        }, {
+            id = 'cornerselling',
+            title = 'Corner Selling',
+            icon = 'cannabis',
+            type = 'client',
+            event = 'qb-drugs:client:cornerselling',
             shouldClose = true
         }
     }
