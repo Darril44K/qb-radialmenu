@@ -210,6 +210,7 @@ local function setRadialState(bool, sendMessage, delay)
     end
 
     SetNuiFocus(bool, bool)
+    SetNuiFocusKeepInput(bool)
     if sendMessage then
         SendNUIMessage({
             action = "ui",

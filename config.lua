@@ -302,14 +302,6 @@ Config.VehicleTrailer = {
             shouldClose = true
         }
     },
-    [3] = {
-        id = 'atm',
-        title = 'ATM',
-        icon = 'money-bill',
-        type = 'client',
-        event = 'qb-atms:client:atmCommand',
-        shouldClose = true
-    },
 }
 
 Config.VehicleDoors = {
