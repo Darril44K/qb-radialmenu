@@ -108,6 +108,7 @@ local function SetupVehicleMenu()
     local ped = PlayerPedId()
     local Vehicle = GetVehiclePedIsIn(ped) ~= 0 and GetVehiclePedIsIn(ped) or getNearestVeh()
     if Vehicle ~= 0 then
+        VehicleMenu.items[#VehicleMenu.items+1] = Config.VehicleTrailer
         VehicleMenu.items[#VehicleMenu.items+1] = Config.VehicleDoors
         if Config.EnableExtraMenu then VehicleMenu.items[#VehicleMenu.items+1] = Config.VehicleExtras end
 
