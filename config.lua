@@ -543,7 +543,7 @@ Config.JobInteractions = {
         }, {
             id = 'checkvehstatus',
             title = 'Vérifier l\'état des améliorations de l\'appareil',
-            icon = 'info-circle',
+            icon = 'circle-info',
             type = 'car',
             event = 'qb-tunerchip:server:TuneStatus',
             shouldClose = true
@@ -564,7 +564,7 @@ Config.JobInteractions = {
         }, {
             id = 'policeinteraction',
             title = 'Actions de police',
-            icon = 'tasks',
+            icon = 'list-check',
             items = {
                 {
                     id = 'checkstatus',
@@ -576,14 +576,14 @@ Config.JobInteractions = {
                 }, {
                     id = 'escort',
                     title = 'Escorter',
-                    icon = 'user-friends',
+                    icon = 'user-group',
                     type = 'client',
                     event = 'police:client:EscortPlayer',
                     shouldClose = true
                 }, {
                     id = 'searchplayer',
                     title = 'Rechercher',
-                    icon = 'search',
+                    icon = 'magnifying-glass',
                     type = 'client',
                     event = 'police:client:SearchPlayer',
                     shouldClose = true
@@ -611,7 +611,7 @@ Config.JobInteractions = {
                 {
                     id = 'spawnpion',
                     title = 'Cône',
-                    icon = 'exclamation-triangle',
+                    icon = 'triangle-exclamation',
                     type = 'client',
                     event = 'police:client:spawnCone',
                     shouldClose = false
@@ -625,7 +625,7 @@ Config.JobInteractions = {
                 }, {
                     id = 'spawnschotten',
                     title = 'Panneau de limitation de vitesse',
-                    icon = 'sign',
+                    icon = 'sign-hanging',
                     type = 'client',
                     event = 'police:client:spawnSchotten',
                     shouldClose = false
