@@ -66,19 +66,6 @@ local function SetupJobMenu()
         JobMenu.items = Config.JobInteractions[PlayerData.job.name]
     end
 
-    if PlayerData.job.isboss then
-        table.insert(JobMenu.items, {
-            {
-                id = 'jobAnnouncement',
-                title = 'Annonces',
-                icon = 'briefcase',
-                type = 'client',
-                event = 'vdream-announcement:client:showAnnoucementMenu',
-                shouldClose = true
-            }
-        })
-    end
-
     if #JobMenu.items == 0 then
         if jobIndex then
             RemoveOption(jobIndex)
@@ -262,6 +249,8 @@ CreateThread(function()
             DisableControlAction(0, 44, true)   -- Cover
             DisableControlAction(0, 47, true)   -- Detonate
             DisableControlAction(0, 55, true)   -- Dive
+            DisableControlAction(0, 69, true)   -- Dive
+            DisableControlAction(0, 70, true)   -- Dive
             DisableControlAction(0, 75, true)   -- Exit Vehicle
             DisableControlAction(0, 76, true)   -- Vehicle Handbrake
             DisableControlAction(0, 81, true)   -- Next Radio (Vehicle)
@@ -276,8 +265,13 @@ CreateThread(function()
             DisableControlAction(0, 122, true)  -- Control OVerride (Flying)
             DisableControlAction(0, 135, true)  -- Control OVerride (Sub)
             DisableControlAction(0, 140, true)  -- Melee attack light
+            DisableControlAction(0, 141, true)  -- Melee attack light
+            DisableControlAction(0, 142, true)  -- Melee attack light
             DisableControlAction(0, 200, true)  -- Pause Menu
             DisableControlAction(0, 245, true)  -- Chat
+            DisableControlAction(0, 257, true)  -- INPUT_ATTACK2
+            DisableControlAction(0, 263, true)  -- INPUT_MELEE_ATTACK1
+            DisableControlAction(0, 264, true)  -- INPUT_MELEE_ATTACK2
         else
             Wait(100)
         end
@@ -288,6 +282,7 @@ end)
 
 RegisterCommand('radialmenu', function()
     if ((IsDowned() and IsPoliceOrEMS()) or not IsDowned()) and not PlayerData.metadata["ishandcuffed"] and not IsPauseMenuActive() and not inRadialMenu then
+        RemoveWeaponFromPed(ped, hash)
         setRadialState(true, true)
         SetCursorLocation(0.5, 0.5)
     end

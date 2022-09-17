@@ -412,16 +412,6 @@ Config.JobInteractions = {
             shouldClose = true
         }
     },
-    ["tsubakisushi"] = {
-        {
-            id = 'bill',
-            title = 'Facture',
-            icon = 'file-invoice',
-            type = 'client',
-            event = 'vdream-billing:client:openMenu',
-            shouldClose = true
-        }
-    },
     ["unicorn"] = {
         {
             id = 'bill',
@@ -489,6 +479,13 @@ Config.JobInteractions = {
                     shouldClose = false
                 }
             }
+        }, {
+            id = 'bill',
+            title = 'Facture',
+            icon = 'file-invoice',
+            type = 'client',
+            event = 'vdream-billing:client:openMenu',
+            shouldClose = true
         }
     },
     ["taxi"] = {
@@ -659,6 +656,20 @@ Config.JobInteractions = {
                     shouldClose = false
                 }
             }
+        }, {
+            id = 'bill',
+            title = 'Facture',
+            icon = 'file-invoice',
+            type = 'client',
+            event = 'vdream-billing:client:openMenu',
+            shouldClose = true
+        }, {
+            id = 'jobAnnouncement',
+            title = 'Annonces',
+            icon = 'briefcase',
+            type = 'client',
+            event = 'vdream-announcement:client:showAnnoucementMenu',
+            shouldClose = true
         }
     },
 }
