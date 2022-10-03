@@ -677,13 +677,6 @@ Config.JobInteractions = {
             type = 'client',
             event = 'vdream-billing:client:openMenu',
             shouldClose = true
-        }, {
-            id = 'jobAnnouncement',
-            title = 'Annonces',
-            icon = 'briefcase',
-            type = 'client',
-            event = 'vdream-announcement:client:showAnnoucementMenu',
-            shouldClose = true
         }
     },
 }
@@ -709,7 +702,7 @@ Config.GangInteractions = {
             title = 'Prendre en hotage',
             icon = 'child',
             type = 'client',
-            event = 'A5:Client:TakeHostage',
+            event = 'vdream-hostage:client:hostage',
             shouldClose = true
         }, {
             id = 'cornerselling',
@@ -761,7 +754,7 @@ Config.GangInteractions = {
             title = 'Prendre en hotage',
             icon = 'child',
             type = 'client',
-            event = 'vdream-hostage:client:TakeHostage',
+            event = 'vdream-hostage:client:hostage',
             shouldClose = true
         }, {
             id = 'cornerselling',
