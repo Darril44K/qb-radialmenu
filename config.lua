@@ -793,6 +793,162 @@ Config.GangInteractions = {
             shouldClose = true
         },
     },
+    ["bloods"] = {
+        {
+            id = 'escort',
+            title = 'Kidnaper',
+            icon = 'user-group',
+            type = 'client',
+            event = 'police:client:KidnapPlayer',
+            shouldClose = true
+        }, {
+            id = 'escort554',
+            title = 'Prendre en hotage',
+            icon = 'child',
+            type = 'client',
+            event = 'vdream-hostage:client:hostage',
+            shouldClose = true
+        }, {
+            id = 'cornerselling',
+            title = 'Vendre de la drogue',
+            icon = 'cannabis',
+            type = 'client',
+            event = 'qb-drugs:client:cornerselling',
+            shouldClose = true
+        }, {
+            id = 'handcuff',
+            title = 'Menotter',
+            icon = 'user-lock',
+            type = 'client',
+            event = 'police:client:CuffPlayerSoft',
+            shouldClose = true
+        }, {
+            id = 'playerinvehicle',
+            title = 'Pousser dans le véhicule',
+            icon = 'car-side',
+            type = 'client',
+            event = 'police:client:PutPlayerInVehicle',
+            shouldClose = true
+        }, {
+            id = 'playeroutvehicle',
+            title = 'Sortir du véhicule',
+            icon = 'car-side',
+            type = 'client',
+            event = 'police:client:SetPlayerOutVehicle',
+            shouldClose = true
+        }, {
+            id = 'stealplayer',
+            title = 'Voler',
+            icon = 'mask',
+            type = 'client',
+            event = 'police:client:RobPlayer',
+            shouldClose = true
+        },
+    },
+    ["families"] = {
+        {
+            id = 'escort',
+            title = 'Kidnaper',
+            icon = 'user-group',
+            type = 'client',
+            event = 'police:client:KidnapPlayer',
+            shouldClose = true
+        }, {
+            id = 'escort554',
+            title = 'Prendre en hotage',
+            icon = 'child',
+            type = 'client',
+            event = 'vdream-hostage:client:hostage',
+            shouldClose = true
+        }, {
+            id = 'cornerselling',
+            title = 'Vendre de la drogue',
+            icon = 'cannabis',
+            type = 'client',
+            event = 'qb-drugs:client:cornerselling',
+            shouldClose = true
+        }, {
+            id = 'handcuff',
+            title = 'Menotter',
+            icon = 'user-lock',
+            type = 'client',
+            event = 'police:client:CuffPlayerSoft',
+            shouldClose = true
+        }, {
+            id = 'playerinvehicle',
+            title = 'Pousser dans le véhicule',
+            icon = 'car-side',
+            type = 'client',
+            event = 'police:client:PutPlayerInVehicle',
+            shouldClose = true
+        }, {
+            id = 'playeroutvehicle',
+            title = 'Sortir du véhicule',
+            icon = 'car-side',
+            type = 'client',
+            event = 'police:client:SetPlayerOutVehicle',
+            shouldClose = true
+        }, {
+            id = 'stealplayer',
+            title = 'Voler',
+            icon = 'mask',
+            type = 'client',
+            event = 'police:client:RobPlayer',
+            shouldClose = true
+        },
+    },
+    ["madrazo"] = {
+        {
+            id = 'escort',
+            title = 'Kidnaper',
+            icon = 'user-group',
+            type = 'client',
+            event = 'police:client:KidnapPlayer',
+            shouldClose = true
+        }, {
+            id = 'escort554',
+            title = 'Prendre en hotage',
+            icon = 'child',
+            type = 'client',
+            event = 'vdream-hostage:client:hostage',
+            shouldClose = true
+        }, {
+            id = 'cornerselling',
+            title = 'Vendre de la drogue',
+            icon = 'cannabis',
+            type = 'client',
+            event = 'qb-drugs:client:cornerselling',
+            shouldClose = true
+        }, {
+            id = 'handcuff',
+            title = 'Menotter',
+            icon = 'user-lock',
+            type = 'client',
+            event = 'police:client:CuffPlayerSoft',
+            shouldClose = true
+        }, {
+            id = 'playerinvehicle',
+            title = 'Pousser dans le véhicule',
+            icon = 'car-side',
+            type = 'client',
+            event = 'police:client:PutPlayerInVehicle',
+            shouldClose = true
+        }, {
+            id = 'playeroutvehicle',
+            title = 'Sortir du véhicule',
+            icon = 'car-side',
+            type = 'client',
+            event = 'police:client:SetPlayerOutVehicle',
+            shouldClose = true
+        }, {
+            id = 'stealplayer',
+            title = 'Voler',
+            icon = 'mask',
+            type = 'client',
+            event = 'police:client:RobPlayer',
+            shouldClose = true
+        },
+    },
 }
 
 Config.TrunkClasses = {
